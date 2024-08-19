@@ -303,26 +303,39 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
+/* Profile Picture Container */
 .section__pic-container {
-  width: 300px; /* Adjust the width and height as needed */
-  height: 300px;
-  border-radius: 50%; /* Makes the element a circle */
-  overflow: hidden; /* Ensures the image does not overflow outside the circle */
-  display: flex; /* Use flexbox for center alignment */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  width: 150px; /* Default size */
+  height: 150px; /* Ensure height matches width for a circle */
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden; /* Ensure the image does not overflow */
+  display: flex; /* Center alignment */
+  justify-content: center;
+  align-items: center;
+  margin: 35px auto; /* Center horizontally and adjust vertical position */
 }
 
+/* Profile Picture Image */
 .section__pic-container img {
-  width: 100%; /* Ensures the image fills the circle */
-  height: auto; /* Maintains aspect ratio */
-  object-fit: cover; /* Ensure the entire image is visible */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the container without distortion */
+  border-radius: 50%; /* Ensure the image remains circular */
 }
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .section__pic-container {
+    width: 120px; /* Adjust size for mobile view */
+    height: 120px; /* Ensure height matches width for a circle */
+  }
+}
+
+
+
+
+
+
 
 
 

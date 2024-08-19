@@ -101,3 +101,27 @@
     text-align: justify;
   }
 }
+
+/* Media Queries for Larger Screens */
+@media screen and (min-width: 768px) {
+  .section__pic-container {
+    width: 300px; /* Size for larger screens */
+    height: 300px; /* Ensure height matches width for a circle */
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section__pic-container {
+    width: 350px; /* Adjust size for very large screens if needed */
+    height: 350px; /* Ensure height matches width for a circle */
+  }
+}
+
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .section__pic-container {
+    width: 120px; /* Adjust size for mobile view */
+    height: 120px; /* Ensure height matches width for a circle */
+  }
+}
